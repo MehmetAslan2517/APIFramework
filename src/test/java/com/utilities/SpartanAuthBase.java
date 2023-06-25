@@ -20,7 +20,7 @@ public class SpartanAuthBase {
     public static void init(){
 
         baseURI = ConfigReader.getProperty("spartanBase");
-        port = Integer.parseInt(ConfigReader.getProperty("spartanPort"));
+        port = Integer.parseInt(ConfigReader.getProperty("spartanAuthPort"));
         basePath =ConfigReader.getProperty("spartanBasePath");
 
         DBUtils.createConnection(ConfigReader.getProperty("spartanDbUrl"),

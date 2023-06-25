@@ -10,13 +10,13 @@ public class SpartanTestBase {
     @BeforeAll
     public static void init(){
 
-        baseURI = ConfigReader.getProperty("spartanBase");
-        port = Integer.parseInt(ConfigReader.getProperty("spartanPort"));
+        baseURI = ConfigReader.getProperty("spartanBase");//http://54.173.46.213
+        port = Integer.parseInt(ConfigReader.getProperty("spartanPort"));//8000
         basePath =ConfigReader.getProperty("spartanBasePath");
 
-        DBUtils.createConnection(ConfigReader.getProperty("spartanDbUrl"),
+        /*DBUtils.createConnection(ConfigReader.getProperty("spartanDbUrl"),
                 ConfigReader.getProperty("spartanDbUsername"),
-                ConfigReader.getProperty("spartanDbPassword"));
+                ConfigReader.getProperty("spartanDbPassword"));*/
 
     }
 
